@@ -1,0 +1,79 @@
+/* Introduction to Cascading Style Sheets */
+
+body {
+  /* If the user cannot load the Arial font, the sans-serif font is used */
+  font-family: Arial, sans-serif;
+  background-color: #FEFFF1;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+input[type="radio"], select, input[type="submit"]{
+  outline: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+form#review-form > input[type="radio"]{
+  /* position: relative; */
+  width: 20px;
+  height: 20px;
+ 
+  
+}
+input[type="radio"] + label {
+  width: 20px;
+  height: 20px;
+  background-image: url("assets/stars.png") ;
+  
+}
+input[type="submit"]:last-child{
+  background-color: gold;
+}
+
+
+h2 {
+  font-size: 32px;
+}
+
+/* This selector selects ALL anchor tag children of ALL list elements that
+are children of an Unordered List element */
+ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* This selector selects all image elements that are children (1 level deep)
+of a header element */
+header > img {
+  width: 100px;
+}
+
+
+d
+/* Selects all elements with the class attribute "ingredients-list" */
+.ingredients-list {
+
+  /* The list style property is shorthand for multiple list-style properties*/
+  list-style: square inside;
+}
+
+ol {
+  list-style: upper-roman inside;
+}
+
+ol > li:nth-of-type(2n) {
+  background-color: lightgrey;
+}
+
+h2 + .user_review{
+  border-top: 1px solid black;
+}
+
+.user_review h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
